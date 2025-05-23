@@ -1,7 +1,13 @@
-#usage2
+os: linux
+language: generic
+dist: focal
+
 vm:
-  use: 2305-image4
+  create:
+    name: 2305-image5
 
 script:
-  - echo "Checking if custom file exists"
+  - echo "Creating custom file"
+  - sudo mkdir /my-custom-dir
+  - echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
   - sudo cat /my-custom-dir/my_custom_file.txt
