@@ -1,6 +1,8 @@
-vm:
-  use: 2305-image3
-
-script:
-  - echo "Checking if custom file exists"
-  - sudo cat /my-custom-dir/my_custom_file.txt
+jobs:
+  include:
+    - stage: "Use custom image"
+      vm:
+        use: 2305-image3
+      script:
+        - echo "Checking if custom file exists"
+        - sudo cat /my-custom-dir/my_custom_file.txt
