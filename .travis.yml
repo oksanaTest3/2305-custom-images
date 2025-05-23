@@ -3,5 +3,5 @@ vm:
     name: 2305-image
 
 script:
-  - echo "Checking if custom file exists"
+  - echo "Checking if custom file exists test"
   - sudo cat /my-custom-dir/my_custom_file.txt
