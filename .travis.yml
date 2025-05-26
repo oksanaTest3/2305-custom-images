@@ -1,6 +1,5 @@
-#usage8
 vm:
-  use: 2305-image4
+  use: 2305-image
 
 script:
   - echo "Checking if custom file exists"
